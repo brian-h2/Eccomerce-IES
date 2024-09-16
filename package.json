@@ -1,0 +1,11 @@
+{
+  "name": "proyecto-aplicacion-web",
+  "version": "1.0.0",
+  "description": "---\r - Desarrollaremos una tienda interactiva con el stack de HTML,CSS Y JavaScript.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

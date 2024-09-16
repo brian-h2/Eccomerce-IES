@@ -1,3 +1,8 @@
+:root{
+    --color-1: #16423C; 
+}
+
+
 /*Login*/
 
 .form-login{
@@ -6,7 +11,6 @@
     height: 98vh;
     margin: auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -14,9 +18,8 @@
 .form-login form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     border: 1px green solid;
-    background-color: #16423C;
+    background-color:  var(--color-1);
     text-align: center;
     color: #E9EFEC;
     height: 300px;  
@@ -28,24 +31,58 @@
     width: 150px;
     height: 50px;
     border: 0px;
-    color: #E9EFEC;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-login form button:hover{
+    background-color: #16423C;
+    border: 1px solid white;
+    cursor: pointer;
+    color: white
 }
 
 .form-login form .form-login-elements{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
     padding: 10px;
-    width: 100%;
+    
 }
 
 .form-login form .form-login-elements label{
-    margin-right: 20px;
+    width: 100%;
+    font-size: 20px;
+    gap: 10px;
+    margin: auto;
 }
 
+.form-login form .form-login-elements .form-login-elements-nombre{
+    display: flex;
+    gap: 50px;
+}
+
+.form-login form .form-login-elements .form-login-elements-contraseña{
+    display: flex;
+    text-align: left;
+    gap: 28.5px;
+}
 
 .form-login form .form-login-elements input{
     width: 150px;
-    height: 30px;
+    height: 4dvi;
     background-color: none;
+    outline: none;
+    font-size: 22px;
+    font-weight: 200;
+    transition: all 0.2s ease-in-out;
+    max-height: 40px;
 }
+
+.form-login form .form-login-elements input:focus{
+    background-color: var(--color-1);
+    color: white;
+}
+
