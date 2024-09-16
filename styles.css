@@ -2,6 +2,22 @@
     --color-1: #16423C; 
 }
 
+input{
+    transition: all 0.2s ease-in-out;
+    font-size: 30px;
+    outline: none;
+    font-weight: 200;
+}
+
+input:focus{
+    background-color: var(--color-1);
+    color: white;
+}
+
+input[type="date"]{
+    font-size: 20px;
+}
+
 
 /*Login*/
 
@@ -74,22 +90,13 @@
     width: 150px;
     height: 4dvi;
     background-color: none;
-    outline: none;
-    font-size: 22px;
-    font-weight: 200;
-    transition: all 0.2s ease-in-out;
     max-height: 40px;
-}
-
-.form-login form .form-login-elements input:focus{
-    background-color: var(--color-1);
-    color: white;
 }
 
 /*Form registro*/
 .form-registro{
     height: 100%;
-    max-width: 70%;
+    max-width: 80%;
     max-height: 80%;
     margin: 5% auto;
     display: flex;
@@ -98,6 +105,11 @@
     flex-direction: column;
     gap: 3rem;
     background-color: #16423C;
+}
+
+.form-registro h1{
+    font-size: 30px;
+    color: white;
 }
 
 .form-registro button{
@@ -120,6 +132,7 @@
 .form-registro-elements{
     width: 100%;
     max-width: 50%;
+    min-width: 30%;
     height: 100%;
     display: flex;
     justify-content: center;
