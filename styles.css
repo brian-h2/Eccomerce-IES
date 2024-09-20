@@ -2,6 +2,7 @@
     --color-1: #16423C; 
     --font-weight: 400;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(to right, #f0f0f0, #333);
 }
 
 
