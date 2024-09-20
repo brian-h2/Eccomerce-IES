@@ -1,12 +1,15 @@
 :root{
     --color-1: #16423C; 
+    --font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 
 input{
     transition: all 0.2s ease-in-out;
     font-size: 30px;
     outline: none;
-    font-weight: 200;
+    font-weight: var(--font-weight);
 }
 
 input:focus{
