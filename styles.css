@@ -1,12 +1,14 @@
 @import "./styles/components/navbar.css";
 @import "./styles/pages/registro.css";
 @import "./styles/pages/index.css";
+@import "./styles/pages/store.css";
 
 :root{
     --color-1: #16423C; 
     --font-weight: 400;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background: linear-gradient(to right, #316640d7, #000000);
+    user-select: none;
 }
 
 input{
