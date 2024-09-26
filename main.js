@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const isAutenticado = localStorage.getItem('userAutenticado'); //Obtendremos en el local storage el valor almacenado en este caso sera false
 
     if (isAutenticado === 'true') {
-        alert('Usuario autenticado')
+        console.log('Usuario no autenticado')
     } else {
         alert('Usuario no autenticado, sera redirigido al inicio de sesion')
         window.location.href = 'pages/login.html';
