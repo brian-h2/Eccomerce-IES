@@ -42,10 +42,39 @@
     transform: scale(1.05);
     cursor: pointer;
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-
 }
 
 .productos .producto img{
     max-width: 200px;
     height: auto;
+}
+
+.productos .producto .button .btn-more{
+    background-color: #16423C;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.productos .producto .button .btn-more:hover{
+    background-color: #216f65;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.productos .producto .button .btn-delete{
+    background-color: #541818;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.productos .producto .button .btn-delete:hover{
+    background-color: #ac2525;
+    transition: background-color 0.3s ease-in-out;
 }
