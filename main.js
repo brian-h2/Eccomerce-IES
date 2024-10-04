@@ -1,13 +1,24 @@
 import { createNavbar } from './scripts/components/navbar.js';
 
 document.addEventListener('DOMContentLoaded', function() {
-    const isAutenticado = localStorage.getItem('userAutenticado'); //Obtendremos en el local storage el valor almacenado en este caso sera false
+    const isAutenticadoJSON = localStorage.getItem('userAutenticado'); 
 
-    if (isAutenticado === 'true') {
-        console.log('Usuario autenticado')
+    console.log(isAutenticadoJSON);
+
+    if (isAutenticadoJSON) {
+        const isAutenticado = JSON.parse(isAutenticadoJSON); 
+
+        if (isAutenticado.authenticated === true) {
+            console.log('Usuario autenticado:', isAutenticado.name);
+            
+        } else {
+            alert('Usuario no autenticado, será redirigido al inicio de sesión');
+            window.location.href = 'pages/login.html';
+        }
     } else {
-        alert('Usuario no autenticado, sera redirigido al inicio de sesion')
+        alert('Usuario no autenticado, será redirigido al inicio de sesión');
         window.location.href = 'pages/login.html';
     }
+
     createNavbar();
 })

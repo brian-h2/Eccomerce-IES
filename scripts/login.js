@@ -11,22 +11,28 @@ buttonRegister.addEventListener("click", (e) => {
 
 })
 
-buttonLogin.addEventListener('click', async function (e) {
-        e.preventDefault();
-        var validacion = comprobarCampos();
-        console.log(validacion.valueOf());
-        const user = await validacionJSON(validacion.email);
-        if (validacion.valueValidate == true && user == true) { 
-            localStorage.setItem('userAutenticado', 'true');
+buttonLogin.addEventListener('click', function (e) {
+    e.preventDefault();
+    const validacion = comprobarCampos();
+    
+    if (validacion.valueValidate) {
+       
+        const user = JSON.parse(localStorage.getItem('userAutenticado'));
+
+        console.log(user.authenticated)
+
+        if (user.authenticated == true && user.email === validacion.email && user.password === validacion.password) {
             alert("Login exitoso");
             window.location.href = "../index.html";
         } else {
-            localStorage.setItem('userAutenticado', 'false');
             alert("Usuario no encontrado");
             limpiarCampos();
         }
-
-        })
+        
+    } else {
+        alert("Login fallido");
+    }
+});
 
 function comprobarCampos() {
             
@@ -45,15 +51,13 @@ function comprobarCampos() {
         } 
             
             // Validar contraseña
-        var regexPassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{8,}$/;
+        var regexPassword = /^.{3,}$/;
             if (!regexPassword.test(password)) {
                 alert("Contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula, un número y un carácter especial");
                 return false;
         } 
-
-        console.log(email);
             
-        return {valueValidate: true, email:email};
+        return {valueValidate: true, email:email, password:password};
 }
 
 const limpiarCampos = () => {

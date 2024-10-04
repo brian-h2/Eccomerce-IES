@@ -1,4 +1,4 @@
-async function validacionJSON(usuarioABuscar) {
+async function validacionJSON(usuarioABuscar,password) {
     try {
         const response = await fetch('../scripts/json/users.json');
         const data = await response.json();  // Convierte el archivo JSON a un objeto de JavaScript
@@ -6,13 +6,11 @@ async function validacionJSON(usuarioABuscar) {
         // Accede a la propiedad 'users' que contiene el array de usuarios
         const usuarios = data.users;
         
-        const usuarioEncontrado = usuarios.find(usuario => usuario.email === usuarioABuscar);
-
-        if (usuarioEncontrado) {
-            console.log('Usuario encontrado:', usuarioEncontrado);
+        const usuarioEncontrado = usuarios.find(usuario => usuario.email  === usuarioABuscar);
+    
+        if (usuarioEncontrado && usuarioEncontrado.password === password) {
             return true; 
         } else {
-            console.log('Usuario no encontrado');
             return false; 
         }
     } catch (error) {

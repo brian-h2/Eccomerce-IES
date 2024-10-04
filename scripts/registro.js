@@ -1,4 +1,3 @@
-
 const buttonRegister = document.getElementById('buttonRegister');
 
 function comprobarRegister() {
@@ -20,14 +19,14 @@ function comprobarRegister() {
             return false;
         }
 
-        const regexPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{3,}$/;
+        const regexPassword = /^.{3,}$/;
         if(!regexPassword.test(password)) {
             alert('Contraseña debe tener al menos 3 caracteres, una letra mayúscula, una letra minúscula, un número y un carácter especial');
             return false;
         }
 
         alert('Registro completado correctamente');
-        return true;
+        return {validateValue: true, name: name, password: password, email: email};
 }
 
 function limpiarForm() {
@@ -39,12 +38,22 @@ function limpiarForm() {
 
 buttonRegister.addEventListener('click', function (e) {
     e.preventDefault();
+
     let valueRegister = comprobarRegister();
-    if(valueRegister) {
+    if (valueRegister.validateValue) {
         alert('Registro exitoso');
-        localStorage.setItem('userAutenticado', 'true');
+        const userData = {
+            authenticated: true,
+            name: valueRegister.name,
+            email: valueRegister.email,
+            password: valueRegister.password,
+        };
+        localStorage.setItem('userAutenticado', JSON.stringify(userData));
         window.location.href = '../index.html';
         limpiarForm();
+    } else {
+        alert('Registro fallado')
+
     }
 })
 

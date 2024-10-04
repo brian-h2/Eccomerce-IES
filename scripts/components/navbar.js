@@ -1,6 +1,9 @@
 const pages = [
     { title: "Inicio", url: "../../index.html" },
     { title: "Remeras", url: "../../pages/Category/remeras.html" },
+    { title: "Camisetas", url: "../../pages/Category/camisetas.html" },
+    { title: "Pantalones", url: "../../pages/Category/zapatillas.html" },
+
 ];
 
 function createNavbar () {
