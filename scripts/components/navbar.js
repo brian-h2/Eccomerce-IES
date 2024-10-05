@@ -1,9 +1,3 @@
-const pages = [
-    { title: "Inicio", url: "/index.html" },
-    { title: "Zapatillas", url: "/pages/Category/zapatillas.html" },
-    { title: "Camisetas", url: "/pages/Category/camisetas.html" },
-    { title: "Pantalones", url: "/pages/Category/pantalones.html" },
-];
 
 export default function createNavBar(navbarSelector, pages) {
     const navbar = document.querySelector(navbarSelector);
@@ -21,6 +15,16 @@ export default function createNavBar(navbarSelector, pages) {
         });
     } else {
         console.error(`No se encontró un elemento con el selector ${navbarSelector}`);
+    }
+
+    const btnLogout = document.getElementById('btn-logout');
+
+    if(btnLogout) {
+        btnLogout.addEventListener('click', () => {
+            window.location.href = 'pages/login.html';
+        });
+    } else {
+        console.error("No se encontró el botón de logout.");
     }
 }
 

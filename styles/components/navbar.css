@@ -37,7 +37,7 @@
     cursor: pointer;
 }
 
-.navBar .nav-logout-home button a{
+.navBar .nav-logout-home button {
     text-decoration: none;
     color:  rgb(255, 255, 255);
     font-size: 18px;

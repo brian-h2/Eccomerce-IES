@@ -50,7 +50,8 @@ buttonRegister.addEventListener('click', function (e) {
         };
         localStorage.setItem('userAutenticado', JSON.stringify(userData));
         localStorage.setItem('userLogin', JSON.stringify({
-           email:userData.email
+           email:userData.email,
+           password: userData.password,
         }
         ));
         window.location.href = '../index.html';

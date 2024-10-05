@@ -1,3 +1,4 @@
+
 import createNavBar from "./scripts/components/navbar.js";
 
 const pages = [
@@ -8,9 +9,9 @@ const pages = [
 ];
 
 document.addEventListener('DOMContentLoaded', function() {
-    const isAutenticadoJSON = localStorage.getItem('userAutenticado'); 
 
-    console.log(isAutenticadoJSON);
+
+    const isAutenticadoJSON = localStorage.getItem('userAutenticado'); 
 
     if (isAutenticadoJSON) {
         const isAutenticado = JSON.parse(isAutenticadoJSON); 
@@ -28,4 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     createNavBar(".navBar-pages ul",pages);
+    
+
 })
+
+

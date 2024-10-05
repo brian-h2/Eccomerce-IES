@@ -17,12 +17,9 @@ buttonLogin.addEventListener('click', function (e) {
     
     if (validacion.valueValidate) {
        
-        const user = JSON.parse(localStorage.getItem('userAutenticado'));
         const userLogin = JSON.parse(localStorage.getItem('userLogin'));
-
-        console.log(userLogin.email);
         
-        if (userLogin.email === validacion.email) {
+        if (userLogin.email === validacion.email && userLogin.password === validacion.password) {
             window.location.href = "/index.html";
         } else {
             alert("Usuario no encontrado");
@@ -52,7 +49,7 @@ function comprobarCampos() {
             // Validar contraseña
         var regexPassword = /^.{3,}$/;
             if (!regexPassword.test(password)) {
-                alert("Contraseña debe tener al menos 8 caracteres, una letra mayúscula, una letra minúscula, un número y un carácter especial");
+                alert("Contraseña incorrecta");
                 return false;
         } 
             
