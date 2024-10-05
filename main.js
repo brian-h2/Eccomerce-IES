@@ -1,4 +1,4 @@
-import { createNavbar } from './scripts/components/navbar.js';
+import { createNavbar,createNavBarPages } from './scripts/components/navbar.js';
 
 document.addEventListener('DOMContentLoaded', function() {
     const isAutenticadoJSON = localStorage.getItem('userAutenticado'); 
@@ -21,4 +21,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     createNavbar();
+    createNavBarPages();
 })
