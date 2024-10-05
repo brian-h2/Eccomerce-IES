@@ -1,4 +1,11 @@
-import { createNavbar,createNavBarPages } from './scripts/components/navbar.js';
+import createNavBar from "./scripts/components/navbar.js";
+
+const pages = [
+    { title: "Inicio", url: "/index.html" },
+    { title: "Zapatillas", url: "/pages/Category/zapatillas.html" },
+    { title: "Camisetas", url: "/pages/Category/camisetas.html" },
+    { title: "Pantalones", url: "/pages/Category/pantalones.html" },
+];
 
 document.addEventListener('DOMContentLoaded', function() {
     const isAutenticadoJSON = localStorage.getItem('userAutenticado'); 
@@ -20,6 +27,5 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = 'pages/login.html';
     }
 
-    createNavbar();
-    createNavBarPages();
+    createNavBar(".navBar-pages ul",pages);
 })

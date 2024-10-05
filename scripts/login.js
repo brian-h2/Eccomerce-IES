@@ -18,17 +18,16 @@ buttonLogin.addEventListener('click', function (e) {
     if (validacion.valueValidate) {
        
         const user = JSON.parse(localStorage.getItem('userAutenticado'));
+        const userLogin = JSON.parse(localStorage.getItem('userLogin'));
 
-        console.log(user.authenticated)
-
-        if (user.authenticated == true && user.email === validacion.email && user.password === validacion.password) {
-            alert("Login exitoso");
-            window.location.href = "../index.html";
+        console.log(userLogin.email);
+        
+        if (userLogin.email === validacion.email) {
+            window.location.href = "/index.html";
         } else {
             alert("Usuario no encontrado");
             limpiarCampos();
         }
-        
     } else {
         alert("Login fallido");
     }

@@ -49,6 +49,10 @@ buttonRegister.addEventListener('click', function (e) {
             password: valueRegister.password,
         };
         localStorage.setItem('userAutenticado', JSON.stringify(userData));
+        localStorage.setItem('userLogin', JSON.stringify({
+           email:userData.email
+        }
+        ));
         window.location.href = '../index.html';
         limpiarForm();
     } else {
