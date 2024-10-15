@@ -16,40 +16,96 @@
   
 }
 
-.productos{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 80px;
-    margin: 40px;
-    justify-content: center;
-    align-items: center;
+.loading{
+    margin-top: 200px;
+    text-align: center;
+    font-size: 44px;
+    color: #ffffff;
+    margin-bottom: 40px;
+    animation: loading 2s infinite linear;
+    animation-delay: 1s;
+    @keyframes loading {
+        0% { opacity: 0.5; }
+        50% { opacity: 1; }
+        100% { opacity: 0.5; }
+    }
+
 }
 
-.productos .producto{
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 100px;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.products-container .producto{
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     transition: transform 0.3s ease-in-out;
     color: #16423C;
     box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
 
 }
+.products-container .producto h3 {
+    font-size: 18px;
+    margin: 10px 0; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    text-shadow: 2px 2px 10px rgb(79, 79, 79); 
+    line-height: 1.5; 
+    max-width: 100%; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
 
-.productos .producto:hover{
+
+
+.products-container .producto:hover{
     transition: transform 0.3s ease-in-out;
     transform: scale(1.05);
     cursor: pointer;
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
-.productos .producto img{
-    max-width: 200px;
-    height: auto;
+.products-container .producto p{
+    display: flex; /* Utiliza flexbox */
+    justify-content: space-between; /* Alinea los botones de forma equidistante */
+    margin-top: auto; 
+    font-size: 18px;
 }
 
-.productos .producto .button .btn-more{
+.products-container .producto img{
+    width: 200px; 
+    height: 150px; 
+    object-fit: cover; 
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.products-container .producto .button{
+    display: flex; /* Utiliza flexbox */
+    justify-content: space-between; /* Alinea los botones de forma equidistante */
+    margin-top: auto; 
+    gap: 10px;
+}
+
+.products-container .producto .button .btn-more{
     background-color: #16423C;
     color: #ffffff;
     border: none;
@@ -59,12 +115,12 @@
     cursor: pointer;
 }
 
-.productos .producto .button .btn-more:hover{
+.products-container .producto .button .btn-more:hover{
     background-color: #216f65;
     transition: background-color 0.3s ease-in-out;
 }
 
-.productos .producto .button .btn-delete{
+.products-container .producto .button .btn-delete{
     background-color: #541818;
     color: #ffffff;
     border: none;
@@ -74,7 +130,7 @@
     cursor: pointer;
 }
 
-.productos .producto .button .btn-delete:hover{
+.products-container .producto .button .btn-delete:hover{
     background-color: #ac2525;
     transition: background-color 0.3s ease-in-out;
 }
