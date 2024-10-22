@@ -1,0 +1,74 @@
+{
+    "productos": [
+      {
+        "categoria": "camisetas",
+        "items": [
+          {
+            "title": "Camiseta Negra Básica",
+            "img": "https://example.com/camiseta-negra.jpg",
+            "price": 15.99,
+            "stock": 50
+          },
+          {
+            "title": "Camiseta Blanca Estampada",
+            "img": "https://example.com/camiseta-blanca.jpg",
+            "price": 18.99,
+            "stock": 30
+          },
+          {
+            "title": "Camiseta Deportiva Azul",
+            "img": "https://example.com/camiseta-azul.jpg",
+            "price": 22.50,
+            "stock": 20
+          }
+        ]
+      },
+      {
+        "categoria": "pantalones",
+        "items": [
+          {
+            "title": "Pantalón Jeans Clásico",
+            "img": "https://example.com/jeans-clasico.jpg",
+            "price": 40.00,
+            "stock": 25
+          },
+          {
+            "title": "Pantalón Chino Beige",
+            "img": "https://example.com/pantalon-chino.jpg",
+            "price": 35.00,
+            "stock": 15
+          },
+          {
+            "title": "Pantalón Jogger Gris",
+            "img": "https://example.com/jogger-gris.jpg",
+            "price": 28.99,
+            "stock": 40
+          }
+        ]
+      },
+      {
+        "categoria": "zapatillas",
+        "items": [
+          {
+            "title": "Zapatillas Deportivas Negras",
+            "img": "https://mmgrim2.azureedge.net/MediaFiles/Grimoldi/2024/9/18/10005582_800.jpg",
+            "price": 60.00,
+            "stock": 10
+          },
+          {
+            "title": "Zapatillas Urbanas Blancas",
+            "img": "https://mmgrim2.azureedge.net/MediaFiles/Grimoldi/2024/9/16/9998896_800.jpg",
+            "price": 55.50,
+            "stock": 8
+          },
+          {
+            "title": "Zapatillas de Running Rojas",
+            "img": "https://mmgrim2.azureedge.net/MediaFiles/Grimoldi/2024/9/16/9998953_800.jpg",
+            "price": 75.00,
+            "stock": 12
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -3,7 +3,7 @@
 .title{
     text-align: center;
     color: #ffffff;
-    font-size: 24px;
+    font-size: 34px;
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: auto;
@@ -13,7 +13,6 @@
     text-transform: uppercase;
     line-height: 1.5;
     max-width: 500px;
-  
 }
 
 .loading{
@@ -32,7 +31,7 @@
 
 }
 
-.products-container{
+.product-list{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 100px;
@@ -42,7 +41,7 @@
     
 }
 
-.products-container .producto{
+.product-list .producto{
     border: 1px solid #ccc;
     padding: 5px;
     text-align: center;
@@ -61,7 +60,8 @@
     overflow: hidden;
 
 }
-.products-container .producto h3 {
+
+.product-list .producto title {
     font-size: 18px;
     margin: 10px 0; 
     text-transform: uppercase; 
@@ -73,23 +73,18 @@
     text-overflow: ellipsis;
 }
 
-
-
-.products-container .producto:hover{
+.product-list .producto:hover{
     transition: transform 0.3s ease-in-out;
     transform: scale(1.05);
     cursor: pointer;
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
-.products-container .producto p{
-    display: flex; /* Utiliza flexbox */
-    justify-content: space-between; /* Alinea los botones de forma equidistante */
-    margin-top: auto; 
-    font-size: 18px;
+.product-list .producto p{
+    font-size: 24px;
 }
 
-.products-container .producto img{
+.product-list .producto img{
     width: 200px; 
     height: 150px; 
     object-fit: cover; 
@@ -98,39 +93,40 @@
 
 }
 
-.products-container .producto .button{
+.product-list .producto .buttons{
     display: flex; /* Utiliza flexbox */
     justify-content: space-between; /* Alinea los botones de forma equidistante */
-    margin-top: auto; 
-    gap: 10px;
+    align-items: end;
+    margin-top: 20px;
+    gap: 15px;
 }
 
-.products-container .producto .button .btn-more{
+.product-list .producto .btn-more{
     background-color: #16423C;
     color: #ffffff;
     border: none;
-    padding: 5px 10px;
+    padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out;
     cursor: pointer;
 }
 
-.products-container .producto .button .btn-more:hover{
+.product-list .producto .btn-more:hover{
     background-color: #216f65;
     transition: background-color 0.3s ease-in-out;
 }
 
-.products-container .producto .button .btn-delete{
+.product-list .producto .btn-delete{
     background-color: #541818;
     color: #ffffff;
     border: none;
-    padding: 5px 10px;
+    padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s ease-in-out;
     cursor: pointer;
 }
 
-.products-container .producto .button .btn-delete:hover{
+.product-list .producto .btn-delete:hover{
     background-color: #ac2525;
     transition: background-color 0.3s ease-in-out;
 }
