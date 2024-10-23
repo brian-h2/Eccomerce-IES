@@ -1,4 +1,5 @@
 import createNavBar from "./scripts/components/navbar.js";
+import renderProductsIndex from "./scripts/components/productsIndex.js";
 
 const pages = [
     { title: "Inicio", url: "/index.html", category: null, url: "/index.html"},
@@ -25,5 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     createNavBar(".navBar-pages ul", pages);
+    renderProductsIndex()
     
 });

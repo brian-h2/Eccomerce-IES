@@ -8,7 +8,6 @@ export default async function createNavBar(navbarSelector, pages) {
             const listItem = document.createElement("li");
             const link = document.createElement("a");
 
-            // Asignar la URL o el título de la página como referencia
             link.href = page.url; // Esto es para navegar o usar con renderProducts
             link.textContent = page.title;
 
@@ -19,13 +18,12 @@ export default async function createNavBar(navbarSelector, pages) {
                 if(link.textContent === 'Inicio') {
                     window.location.href = '../../index.html'
                 } else {
-                    const category = link.textContent;                    renderProducts(category);
-
+                    const category = link.textContent;                    
+                    renderProducts(category);
                 }
 
             });
 
-            // Añadir el enlace al elemento <li> y después al navbar
             listItem.appendChild(link);
             navbar.appendChild(listItem);
         });
@@ -33,7 +31,6 @@ export default async function createNavBar(navbarSelector, pages) {
         console.error(`No se encontró un elemento con el selector ${navbarSelector}`);
     }
 
-    // Botón de logout para redirigir al login
     const btnLogout = document.getElementById('btn-logout');
     if (btnLogout) {
         btnLogout.addEventListener('click', () => {

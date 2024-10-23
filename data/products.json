@@ -5,19 +5,39 @@
         "items": [
           {
             "title": "Camiseta Negra Básica",
-            "img": "https://example.com/camiseta-negra.jpg",
+            "img": "https://acdn.mitiendanube.com/stores/001/490/877/products/remera-11-cartel-negra-atras-web-af6412b577df23e7a117271935730771-480-0.webp",
             "price": 15.99,
-            "stock": 50
+            "stock": 50,
+            "isFavorite": true
           },
           {
-            "title": "Camiseta Blanca Estampada",
-            "img": "https://example.com/camiseta-blanca.jpg",
+            "title": "REMERA TWIN VIBES - BLACK",
+            "img": "https://acdn.mitiendanube.com/stores/001/490/877/products/remera-1-twin-vibes-negra-adelante-web-a6c3724512493d978317271930524714-480-0.webp",
             "price": 18.99,
-            "stock": 30
+            "stock": 30,
+            "isFavorite": true
           },
           {
-            "title": "Camiseta Deportiva Azul",
-            "img": "https://example.com/camiseta-azul.jpg",
+            "title": "REMERA 2 STARS - NUBE PLATEADA",
+            "img": "https://acdn.mitiendanube.com/stores/001/490/877/products/remera-mc-2-college-gris-adelante-web-f6e6f33e123bd41c8517089877685943-480-0.webp",
+            "price": 22.50,
+            "stock": 20
+          },
+          {
+            "title": "REMERA 6 STARS - BLANCA",
+            "img": "https://acdn.mitiendanube.com/stores/001/490/877/products/remera-mc-6-nitro-blanca-adelante-web-639ee78439ab9a5ed817089831743490-480-0.webp",
+            "price": 22.50,
+            "stock": 20
+          },
+          {
+            "title": "REMERA SURREAL",
+            "img": "https://acdn.mitiendanube.com/stores/001/490/877/products/remera-surreal-adelante-web-532877808428afd82c17176086789789-480-0.webp",
+            "price": 22.50,
+            "stock": 20
+          },
+          {
+            "title": "REMERA P&W",
+            "img": "https://acdn.mitiendanube.com/stores/001/490/877/products/remera-pw-adelante-c78c1ddaa399841b0717176855956141-480-0.webp",
             "price": 22.50,
             "stock": 20
           }
@@ -27,20 +47,40 @@
         "categoria": "pantalones",
         "items": [
           {
-            "title": "Pantalón Jeans Clásico",
-            "img": "https://example.com/jeans-clasico.jpg",
+            "title": "PANTALON DAVID VERDE",
+            "img": "https://acdn.mitiendanube.com/stores/252/220/products/e8c747c2-201e-494a-b328-1ff36b55e997-d6a9aa3a6e0e2ece7217245151255612-640-0.webp",
             "price": 40.00,
-            "stock": 25
+            "stock": 25,
+            "isFavorite": true
           },
           {
-            "title": "Pantalón Chino Beige",
-            "img": "https://example.com/pantalon-chino.jpg",
+            "title": "JEAN FANCY CELESTE",
+            "img": "https://acdn.mitiendanube.com/stores/252/220/products/b5c35ca3-159b-4943-a76f-b1751c76363c-cf368321a66686dac717245163730903-640-0.webp",
             "price": 35.00,
-            "stock": 15
+            "stock": 15,
+            "isFavorite": true
           },
           {
-            "title": "Pantalón Jogger Gris",
-            "img": "https://example.com/jogger-gris.jpg",
+            "title": "JEAN KALO VERDE",
+            "img": "https://acdn.mitiendanube.com/stores/252/220/products/d5712c26-28c7-48b7-a8b1-76c4d32c87ca-9d0e31f1d30ef2eaac17245190779133-640-0.webp",
+            "price": 28.99,
+            "stock": 40
+          },
+          {
+            "title": "JEAN BALBO CELESTE",
+            "img": "https://acdn.mitiendanube.com/stores/252/220/products/69cc7e63-fbce-4d31-a5a3-ef8cc7c0452d-549fb90112add4ea7a17284219359044-640-0.webp",
+            "price": 28.99,
+            "stock": 40
+          },
+          {
+            "title": "PANTALON NIKO GRIS",
+            "img": "https://acdn.mitiendanube.com/stores/252/220/products/071836c9-2344-4fdd-955c-932bbe8e2f11-496b376e6602fc9cc917245222642576-640-0.webp",
+            "price": 28.99,
+            "stock": 40
+          },
+          {
+            "title": "PANTALON OS BS AS AZUL",
+            "img": "https://acdn.mitiendanube.com/stores/252/220/products/aca7fe23-d5a3-4de8-b327-845381c324fb-3405a343a8d536d8c317245053662960-640-0.webp",
             "price": 28.99,
             "stock": 40
           }
@@ -50,19 +90,21 @@
         "categoria": "zapatillas",
         "items": [
           {
-            "title": "Zapatillas Deportivas Negras",
+            "title": "Vans ZapatillasU SK8-HI",
             "img": "https://mmgrim2.azureedge.net/MediaFiles/Grimoldi/2024/9/18/10005582_800.jpg",
             "price": 60.00,
-            "stock": 10
+            "stock": 10,
+            "isFavorite": true
           },
           {
-            "title": "Zapatillas Urbanas Blancas",
+            "title": "Vans ZapatillasU SK8-HI",
             "img": "https://mmgrim2.azureedge.net/MediaFiles/Grimoldi/2024/9/16/9998896_800.jpg",
             "price": 55.50,
-            "stock": 8
+            "stock": 8,
+            "isFavorite": true
           },
           {
-            "title": "Zapatillas de Running Rojas",
+            "title": "Vans ZapatillasU SK8-HI",
             "img": "https://mmgrim2.azureedge.net/MediaFiles/Grimoldi/2024/9/16/9998953_800.jpg",
             "price": 75.00,
             "stock": 12

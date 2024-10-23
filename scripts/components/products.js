@@ -3,12 +3,10 @@ export default async function renderProducts(category) {
         // Obtener el contenedor principal del inicio
         const mainContent = document.getElementById('main-content');
         
-        // Limpiar el contenido del inicio
         if (mainContent) {
-            mainContent.innerHTML = ''; // Limpia todo el contenido del inicio
+            mainContent.innerHTML = ''; 
         }
 
-        // Hacer la solicitud a la API o al archivo JSON
         const response = await fetch('../../data/products.json');
         const products = await response.json();
 
@@ -51,7 +49,6 @@ export default async function renderProducts(category) {
                 // Agregar la lista de productos al contenedor principal
                 mainContent.appendChild(productList);
             } else {
-                // Mostrar un mensaje si no se encuentran productos
                 const errorMessage = document.createElement('p');
                 errorMessage.innerText = "No se encontraron productos para esta categoría.";
                 mainContent.appendChild(errorMessage);
