@@ -129,3 +129,18 @@
     background-color: #ac2525;
     transition: background-color 0.3s ease-in-out;
 }
+
+.product-list .producto .btn-cart{
+    background-color: #16423C;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.product-list .producto .btn-cart:hover{
+    background-color: #216f65;
+    transition: background-color 0.3s ease-in-out;
+}

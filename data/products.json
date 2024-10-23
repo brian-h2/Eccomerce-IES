@@ -26,19 +26,19 @@
           {
             "title": "REMERA 6 STARS - BLANCA",
             "img": "https://acdn.mitiendanube.com/stores/001/490/877/products/remera-mc-6-nitro-blanca-adelante-web-639ee78439ab9a5ed817089831743490-480-0.webp",
-            "price": 22.50,
+            "price": 45.50,
             "stock": 20
           },
           {
             "title": "REMERA SURREAL",
             "img": "https://acdn.mitiendanube.com/stores/001/490/877/products/remera-surreal-adelante-web-532877808428afd82c17176086789789-480-0.webp",
-            "price": 22.50,
+            "price": 32,
             "stock": 20
           },
           {
             "title": "REMERA P&W",
             "img": "https://acdn.mitiendanube.com/stores/001/490/877/products/remera-pw-adelante-c78c1ddaa399841b0717176855956141-480-0.webp",
-            "price": 22.50,
+            "price": 90,
             "stock": 20
           }
         ]
@@ -63,25 +63,25 @@
           {
             "title": "JEAN KALO VERDE",
             "img": "https://acdn.mitiendanube.com/stores/252/220/products/d5712c26-28c7-48b7-a8b1-76c4d32c87ca-9d0e31f1d30ef2eaac17245190779133-640-0.webp",
-            "price": 28.99,
+            "price": 25,
             "stock": 40
           },
           {
             "title": "JEAN BALBO CELESTE",
             "img": "https://acdn.mitiendanube.com/stores/252/220/products/69cc7e63-fbce-4d31-a5a3-ef8cc7c0452d-549fb90112add4ea7a17284219359044-640-0.webp",
-            "price": 28.99,
+            "price": 12,
             "stock": 40
           },
           {
             "title": "PANTALON NIKO GRIS",
             "img": "https://acdn.mitiendanube.com/stores/252/220/products/071836c9-2344-4fdd-955c-932bbe8e2f11-496b376e6602fc9cc917245222642576-640-0.webp",
-            "price": 28.99,
+            "price": 30,
             "stock": 40
           },
           {
             "title": "PANTALON OS BS AS AZUL",
             "img": "https://acdn.mitiendanube.com/stores/252/220/products/aca7fe23-d5a3-4de8-b327-845381c324fb-3405a343a8d536d8c317245053662960-640-0.webp",
-            "price": 28.99,
+            "price": 23,
             "stock": 40
           }
         ]

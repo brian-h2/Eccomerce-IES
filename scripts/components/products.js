@@ -4,6 +4,7 @@ export default async function renderProducts(category) {
         const mainContent = document.getElementById('main-content');
         const productFavorite = document.getElementById('productsfavorites');
         const title = document.getElementById('titleFavorite');
+
         if (mainContent && productFavorite) {
             mainContent.innerHTML = ''; 
             productFavorite.innerHTML = '';
@@ -42,6 +43,7 @@ export default async function renderProducts(category) {
                         <div class="buttons">
                             <button class="btn-more">+</button>
                             <button class="btn-delete">-</button>
+                            <button class="btn-cart">🛒</button>
                         </div>
                     `;
 
