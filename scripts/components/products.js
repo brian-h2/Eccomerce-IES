@@ -2,9 +2,12 @@ export default async function renderProducts(category) {
     try {
         // Obtener el contenedor principal del inicio
         const mainContent = document.getElementById('main-content');
-        
-        if (mainContent) {
+        const productFavorite = document.getElementById('productsfavorites');
+        const title = document.getElementById('titleFavorite');
+        if (mainContent && productFavorite) {
             mainContent.innerHTML = ''; 
+            productFavorite.innerHTML = '';
+            title.innerHTML = '';
         }
 
         const response = await fetch('../../data/products.json');

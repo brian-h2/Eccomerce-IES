@@ -1,3 +1,12 @@
+h1{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
 .header{
     margin: 50px auto;
     width: 100%;
@@ -56,4 +65,43 @@
 .header-presentation-elements img {
     width: 100%;
     max-width: 150px;
+}
+
+.productsFavorites {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    position: relative;
+
+}
+
+.productsFavorites .product-card{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;   
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.productsFavorites .product-card:hover{
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.22);
+    cursor: pointer;
+    z-index: 10; 
+    
+}
+
+.productsFavorites .product-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
 }
