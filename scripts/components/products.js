@@ -1,3 +1,5 @@
+import renderCart from "./cart.js";
+
 export default async function renderProducts(category) {
     try {
         // Obtener el contenedor principal del inicio
@@ -53,6 +55,7 @@ export default async function renderProducts(category) {
 
                 // Agregar la lista de productos al contenedor principal
                 mainContent.appendChild(productList);
+                renderCart();
             } else {
                 const errorMessage = document.createElement('p');
                 errorMessage.innerText = "No se encontraron productos para esta categoría.";
