@@ -43,9 +43,9 @@ export default async function renderProducts(category) {
                         <h3>${item.title}</h3>
                         <p>$${item.price}</p>
                         <div class="buttons">
-                            <button class="btn-more">+</button>
-                            <button class="btn-delete">-</button>
-                            <button class="btn-cart">🛒</button>
+                            <button class="btn-more" id="btn-more">+</button>
+                            <button class="btn-delete" id="btn-delete">-</button>
+                            <button class="btn-cart" id="btn-cart">🛒</button>
                         </div>
                     `;
 
@@ -55,7 +55,8 @@ export default async function renderProducts(category) {
 
                 // Agregar la lista de productos al contenedor principal
                 mainContent.appendChild(productList);
-                renderCart();
+                renderCart()
+
             } else {
                 const errorMessage = document.createElement('p');
                 errorMessage.innerText = "No se encontraron productos para esta categoría.";
