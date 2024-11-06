@@ -4,8 +4,14 @@ export default function renderCart(btnEvent) {
 
     //Por cada btnMore llama al evento correspondiente
     btnMore.forEach(btn => {
-        btn.addEventListener("click", function() {
-            console.log('hola')
+        btn.addEventListener("click", () => {
+            console.log(btnEvent)
         });
+    })
+
+    btnDelete.forEach(btn => {
+        btn.addEventListener("click", () => {
+
+        })
     })
 }

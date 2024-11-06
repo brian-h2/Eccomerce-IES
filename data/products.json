@@ -4,6 +4,7 @@
         "categoria": "camisetas",
         "items": [
           {
+            "ïd": 1,
             "title": "Camiseta Negra Básica",
             "img": "https://acdn.mitiendanube.com/stores/001/490/877/products/remera-11-cartel-negra-atras-web-af6412b577df23e7a117271935730771-480-0.webp",
             "price": 15.99,
@@ -47,6 +48,7 @@
         "categoria": "pantalones",
         "items": [
           {
+            "ïd": 1,
             "title": "PANTALON DAVID VERDE",
             "img": "https://acdn.mitiendanube.com/stores/252/220/products/e8c747c2-201e-494a-b328-1ff36b55e997-d6a9aa3a6e0e2ece7217245151255612-640-0.webp",
             "price": 40.00,
@@ -90,6 +92,7 @@
         "categoria": "zapatillas",
         "items": [
           {
+            "id": 1,
             "title": "Vans ZapatillasU SK8-HI",
             "img": "https://mmgrim2.azureedge.net/MediaFiles/Grimoldi/2024/9/18/10005582_800.jpg",
             "price": 60.00,
@@ -97,6 +100,7 @@
             "isFavorite": true
           },
           {
+            "id": 2,
             "title": "Vans ZapatillasU SK8-HI",
             "img": "https://mmgrim2.azureedge.net/MediaFiles/Grimoldi/2024/9/16/9998896_800.jpg",
             "price": 55.50,
@@ -104,6 +108,7 @@
             "isFavorite": true
           },
           {
+            "id": 3,
             "title": "Vans ZapatillasU SK8-HI",
             "img": "https://mmgrim2.azureedge.net/MediaFiles/Grimoldi/2024/9/16/9998953_800.jpg",
             "price": 75.00,
