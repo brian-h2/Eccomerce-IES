@@ -130,17 +130,74 @@
     transition: background-color 0.3s ease-in-out;
 }
 
-.product-list .producto .btn-cart{
-    background-color: #16423C;
-    color: #ffffff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease-in-out;
-    cursor: pointer;
+.cart-container{
+    overflow: scroll;
+    display: flex !important;
+    flex-direction: column;
 }
 
-.product-list .producto .btn-cart:hover{
-    background-color: #216f65;
-    transition: background-color 0.3s ease-in-out;
+.cart-container .title{
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+
+/* Estilo general para cada item en el carrito */
+.listCart {
+    display: flex; /* Alinea los elementos en fila */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column;
+    padding: 10px; /* Espaciado interno */
+    border-bottom: 1px solid #ddd; /* Línea divisoria */
+    margin-bottom: 10px; /* Separación entre items */
+    gap: 15px; /* Espacio entre elementos dentro de listCart */
+}
+
+/* Estilo para el título del item */
+.title-item {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0; /* Elimina margen por defecto */
+    flex: 2; /* Ocupa más espacio que otros elementos */
+}
+
+/* Estilo para el precio del item */
+.title-price {
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 0;
+    flex: 1; /* Ocupa espacio moderado */
+    text-align: right; /* Alineación a la derecha */
+}
+
+/* Estilo para la imagen */
+.listCart img {
+    width: 80px; /* Tamaño de la imagen */
+    height: 80px; /* Tamaño de la imagen */
+    object-fit: cover; /* Mantiene proporciones de imagen */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo para el botón de eliminar */
+.btn-delete {
+    padding: 5px 10px;
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+}
+
+.btn-delete:hover {
+    background-color: #ff1f1f;
+}
+
+
+.cart-total{
+    font-size: 1.2rem; /* Tamaño de fuente */
+    color: #bdbdbd; /* Color del texto */
+    margin: 0 0 10px 0;
 }
