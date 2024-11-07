@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Posterable';
+    src: url('../../fonts/POSTERABLE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 h1{
     text-align: center;
     margin-top: 100px;
@@ -8,7 +16,7 @@ h1{
 }
 
 .header{
-    margin: 50px auto;
+    margin: 30px auto;
     width: 100%;
     display: flex;
     text-align: center;
@@ -24,18 +32,20 @@ h1{
 }
 
 .header .header-presentation img{
-    width: 80%;
+    width: 100%;
     height: 10%;
     margin: auto;
 }
 
 .header .header-presentation h1{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -200%);
-    font-size: 100px;
-    font-weight: bold;
+    top: 55%;
+    text-transform: uppercase;
+    width: 99%;
+    transform: translate(-0%, -190%);
+    font-family: 'Posterable', sans-serif;
+    font-size: 120px;
+    font-weight: lighter;
     color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
@@ -44,8 +54,8 @@ h1{
     display: flex;
     gap: 30px;
     align-items: center;
-    margin: 50px auto;
-    width: 80%;
+    margin: -80px auto;
+    width: 95%;
     justify-content: space-between;
     flex-direction: row;
     background-color: #16423C;
@@ -89,7 +99,6 @@ h1{
     transform: translateX(0); /* Muestra el carrito deslizándolo desde la derecha */
 }
 
-/* Estilo para cerrar el carrito (puedes agregar un botón de cerrar dentro del contenedor) */
 .cart-container .close-cart {
     position: absolute;
     top: 20px;
@@ -105,7 +114,7 @@ h1{
 .cart-container .clean-cart {
     position: absolute;
     top: 20px;
-    left: 260px;
+    left: 250px;
     background: #ff0000;
     color: #fff;
     padding: 10px;
@@ -118,17 +127,6 @@ h1{
 .cart-container h1 {
     font-size: 24px;
     margin-bottom: 20px;
-}
-
-/* Estilos para el botón del carrito (en los productos) */
-.cart-button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    display: inline-block;
 }
 
 

@@ -142,44 +142,40 @@
     padding-top: 30px;
 }
 
-/* Estilo general para cada item en el carrito */
 .listCart {
-    display: flex; /* Alinea los elementos en fila */
-    align-items: center; /* Centra verticalmente */
+    display: flex; 
+    align-items: center; 
     flex-direction: column;
-    padding: 10px; /* Espaciado interno */
-    border-bottom: 1px solid #ddd; /* Línea divisoria */
-    margin-bottom: 10px; /* Separación entre items */
-    gap: 15px; /* Espacio entre elementos dentro de listCart */
+    padding: 10px; 
+    border-bottom: 1px solid #ddd; 
+    margin-bottom: 10px; 
+    gap: 15px; 
 }
 
-/* Estilo para el título del item */
 .title-item {
     font-size: 1.2rem;
     font-weight: bold;
     color: #ffffff;
-    margin: 0; /* Elimina margen por defecto */
-    flex: 2; /* Ocupa más espacio que otros elementos */
+    margin: 0; 
+    flex: 2; 
 }
 
-/* Estilo para el precio del item */
 .title-price {
     font-size: 1rem;
     color: #ffffff;
     margin: 0;
-    flex: 1; /* Ocupa espacio moderado */
-    text-align: right; /* Alineación a la derecha */
+    flex: 1; 
+    text-align: right; 
 }
 
-/* Estilo para la imagen */
 .listCart img {
-    width: 80px; /* Tamaño de la imagen */
-    height: 80px; /* Tamaño de la imagen */
-    object-fit: cover; /* Mantiene proporciones de imagen */
-    border-radius: 5px; /* Bordes redondeados */
+    width: 80px; 
+    height: 80px; 
+    object-fit: cover; 
+    border-radius: 5px;
 }
 
-/* Estilo para el botón de eliminar */
+
 .btn-delete {
     padding: 5px 10px;
     background-color: #ff4c4c;
@@ -197,7 +193,7 @@
 
 
 .cart-total{
-    font-size: 1.2rem; /* Tamaño de fuente */
-    color: #bdbdbd; /* Color del texto */
+    font-size: 1.2rem; 
+    color: #bdbdbd; 
     margin: 0 0 10px 0;
 }

@@ -37,7 +37,6 @@ export default async function renderProducts(category) {
                         <p>$${item.price}</p>
                         <div class="buttons">
                             <button class="btn-more" data-id="${item.id}">+</button>
-                            <button class="btn-delete" data-id="${item.id}">-</button>
                         </div>
                     `;
                     productList.appendChild(li);
@@ -64,13 +63,19 @@ export default async function renderProducts(category) {
 
 // Carrito
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+const btnCart = document.getElementById('btn-cart')
+
+
+btnCart.addEventListener('click', () => {
+    renderCartProducts()
+})
 
 function addToCart(itemId, category) {
-    console.log(itemId,category)
     const item = category.items.find(item => item.id === parseInt(itemId));
     if (item) {
         carrito.push(item);
         localStorage.setItem('carrito', JSON.stringify(carrito));
+        alert('Producto agregado correctamente')
         renderCartProducts();
     }
 }
@@ -78,11 +83,6 @@ function addToCart(itemId, category) {
 function renderCartProducts() {
     let cartContainer = document.querySelector('.cart-container');
     const mainContent = document.querySelector('main');
-
-    if (carrito.length === 0) {
-        alert('Carrito vacío!');
-        return;  // Detenemos la ejecución si el carrito está vacío
-    }
 
     if (!cartContainer) {
         cartContainer = document.createElement('div');
@@ -103,8 +103,8 @@ function renderCartProducts() {
         cartContainer.querySelector('.clean-cart').addEventListener('click', () => {
             localStorage.removeItem('carrito');
             carrito = [];
-            renderCartProducts();
             alert('Carrito vaciado correctamente');
+            renderCartProducts();
         });
     }
 
@@ -113,6 +113,7 @@ function renderCartProducts() {
     const cartItems = cartContainer.querySelector('.cart-items');
     cartItems.innerHTML = '';
     let total = 0;
+    let idItem = 0;
 
     carrito.forEach(item => {
         const listItem = document.createElement('li');
@@ -123,17 +124,20 @@ function renderCartProducts() {
             <img src="${item.img}" alt="${item.title}">
             <button class="btn-delete" data-id="${item.id}">Eliminar</button>
         `;
+        idItem = item.id
         cartItems.appendChild(listItem);
         total += item.price;
     });
 
     cartContainer.querySelector('.cart-total').textContent = total;
+    
 
     cartItems.querySelectorAll('.btn-delete').forEach(btn => {
         btn.addEventListener('click', () => {
             const itemId = btn.getAttribute('data-id');
             carrito = carrito.filter(item => item.id !== parseInt(itemId));
             localStorage.setItem('carrito', JSON.stringify(carrito));
+            alert('Producto eliminado correctamente')
             renderCartProducts();
         });
     });
